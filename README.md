@@ -1,3 +1,9 @@
+# E-commerce Project
+
+## Diagramme relationnel d'entités
+
+### Entités et leurs propriétés
+
 - **User**
   - id: int
   - username: string
@@ -81,6 +87,8 @@
   - created_at: datetime
   - updated_at: datetime
 
+### Relations entre les entités
+
 - Un **User** peut avoir un **Customer** (relation 1:1)
 - Un **Customer** peut avoir plusieurs **CustomerAddresses** (relation 1:N)
 - Un **Category** peut avoir plusieurs **Products** (relation 1:N)
@@ -90,6 +98,7 @@
 - Un **OrderLine** est lié à un **Product** (relation N:1)
 - Un **Order** peut avoir plusieurs **Payments** (relation 1:N)
 
+### Diagramme relationnel d'entités (ERD) en Mermaid
 
 ```mermaid
 erDiagram
